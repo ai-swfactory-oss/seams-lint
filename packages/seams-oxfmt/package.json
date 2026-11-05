@@ -1,0 +1,38 @@
+{
+  "name": "@ai-swfactory-oss/seams-oxfmt",
+  "description": "The oxfmt seam: a typed SDK over oxfmt that returns the files it would reformat as plain data. A fake lives under ./testing.",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-swfactory-oss/seams-lint.git",
+    "directory": "packages/seams-oxfmt"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./testing": {
+      "source": "./src/testing/index.ts",
+      "types": "./dist/testing/index.d.ts",
+      "import": "./dist/testing/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!dist/**/*.tgz"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.0"
+  }
+}
