@@ -12,6 +12,19 @@ importers:
         specifier: ^24.0.0
         version: 24.19.2
 
+  packages/prettier:
+    dependencies:
+      '@ai-swfactory-oss/files':
+        specifier: ^4.0.0
+        version: 4.0.0
+      prettier:
+        specifier: ^3.8.3
+        version: 3.10.1
+    devDependencies:
+      '@types/node':
+        specifier: ^24.0.0
+        version: 24.19.2
+
   packages/seams-eslint:
     devDependencies:
       '@types/node':
@@ -36,24 +49,37 @@ importers:
         specifier: ^24.0.0
         version: 24.19.2
 
-  packages/seams-prettier:
-    devDependencies:
-      '@types/node':
-        specifier: ^24.0.0
-        version: 24.19.2
-
 packages:
+
+  '@ai-swfactory-oss/bytes@1.0.0':
+    resolution: {integrity: sha512-gModDDd/FTT1uKI661oPCezBxta4uuiI+q3HzYH/fIPv4HSR2YOn//c4vd1RP2FqNy7C3MaEoud04R7cO9VSqQ==, tarball: https://npm.pkg.github.com/download/@ai-swfactory-oss/bytes/1.0.0/11622eb9effcdcecc47a06e6b22ba212c4a98ba2}
+
+  '@ai-swfactory-oss/files@4.0.0':
+    resolution: {integrity: sha512-kIex7X1TUItAET8fMX/xAaYuNzSIL4jVw9QH3opHl+Q0KiQxcPWaw+m/5ht0qCRRDJ6yYZTGyq8a7hGIi1A37w==, tarball: https://npm.pkg.github.com/download/@ai-swfactory-oss/files/4.0.0/c00d77de3cce80d479f9672311b026acaf0175d2}
 
   '@types/node@24.19.2':
     resolution: {integrity: sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ==}
+
+  prettier@3.10.1:
+    resolution: {integrity: sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   undici-types@7.24.6:
     resolution: {integrity: sha512-WRNW+sJgj5OBN4/0JpHFqtqzhpbnV0GuB+OozA9gCL7a993SmU+1JBZCzLNxYsbMfIeDL+lTsphD5jN5N+n0zg==}
 
 snapshots:
 
+  '@ai-swfactory-oss/bytes@1.0.0': {}
+
+  '@ai-swfactory-oss/files@4.0.0':
+    dependencies:
+      '@ai-swfactory-oss/bytes': 1.0.0
+
   '@types/node@24.19.2':
     dependencies:
       undici-types: 7.24.6
+
+  prettier@3.10.1: {}
 
   undici-types@7.24.6: {}

@@ -7,6 +7,6 @@
     "@ai-swfactory-oss/seams-knip": { "kind": "sdk" },
     "@ai-swfactory-oss/seams-oxfmt": { "kind": "sdk" },
     "@ai-swfactory-oss/seams-oxlint": { "kind": "sdk" },
-    "@ai-swfactory-oss/seams-prettier": { "kind": "sdk" }
+    "@ai-swfactory-oss/prettier": { "kind": "sdk" }
   }
 }

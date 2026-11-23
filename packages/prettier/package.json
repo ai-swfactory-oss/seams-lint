@@ -1,13 +1,13 @@
 {
-  "name": "@ai-swfactory-oss/seams-prettier",
-  "description": "The Prettier seam: a typed SDK over Prettier that returns the files it would reformat as plain data. A fake lives under ./testing.",
+  "name": "@ai-swfactory-oss/prettier",
+  "description": "A pure Prettier library: formats the files of a Tree in-process with a closed plugin set, and returns the changed, skipped and failed files as plain data.",
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ai-swfactory-oss/seams-lint.git",
-    "directory": "packages/seams-prettier"
+    "directory": "packages/prettier"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -20,11 +20,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./testing": {
-      "source": "./src/testing/index.ts",
-      "types": "./dist/testing/index.d.ts",
-      "import": "./dist/testing/index.js"
-    },
     "./package.json": "./package.json"
   },
   "files": [
@@ -32,6 +27,10 @@
     "src",
     "!dist/**/*.tgz"
   ],
+  "dependencies": {
+    "@ai-swfactory-oss/files": "^4.0.0",
+    "prettier": "^3.8.3"
+  },
   "devDependencies": {
     "@types/node": "^24.0.0"
   }
