@@ -1,0 +1,3 @@
+Oxfmt: interface Oxfmt { readonly check: () => OxfmtCheckResult; }
+OxfmtCheckResult: interface OxfmtCheckResult { readonly unformatted: readonly string[]; }
+createOxfmt: const createOxfmt: () => Oxfmt

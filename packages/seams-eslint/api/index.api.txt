@@ -1,0 +1,4 @@
+Eslint: interface Eslint { readonly lint: () => EslintResult; }
+EslintFinding: interface EslintFinding { readonly file: string; readonly line: number; readonly ruleId: string; readonly message: string; }
+EslintResult: interface EslintResult { readonly findings: readonly EslintFinding[]; }
+createEslint: const createEslint: () => Eslint

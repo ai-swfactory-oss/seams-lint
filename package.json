@@ -1,10 +1,9 @@
 {
   "name": "seams-lint-monorepo",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "license": "MIT",
-  "description": "seams-lint workspace: seams for static analysis and formatting (ESLint, oxlint, oxfmt, Prettier and knip).",
+  "description": "seams-lint workspace: seams for static analysis and formatting (ESLint, oxlint, oxfmt and knip).",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ai-swfactory-oss/seams-lint.git"

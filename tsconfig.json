@@ -40,9 +40,6 @@
   "files": [],
   "references": [
     {
-      "path": "./packages/prettier"
-    },
-    {
       "path": "./packages/seams-eslint"
     },
     {

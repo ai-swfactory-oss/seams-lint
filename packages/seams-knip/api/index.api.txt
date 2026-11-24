@@ -1,0 +1,4 @@
+Knip: interface Knip { readonly analyse: () => KnipResult; }
+KnipIssue: interface KnipIssue { readonly file: string; readonly type: string; readonly symbol: string; }
+KnipResult: interface KnipResult { readonly issues: readonly KnipIssue[]; }
+createKnip: const createKnip: () => Knip

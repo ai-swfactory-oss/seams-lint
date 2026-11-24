@@ -1,0 +1,1 @@
+createFakeOxlint: const createFakeOxlint: (result?: OxlintResult) => Oxlint

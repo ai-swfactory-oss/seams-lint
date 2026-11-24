@@ -1,0 +1,4 @@
+Oxlint: interface Oxlint { readonly lint: () => OxlintResult; }
+OxlintFinding: interface OxlintFinding { readonly file: string; readonly line: number; readonly ruleId: string; readonly message: string; }
+OxlintResult: interface OxlintResult { readonly findings: readonly OxlintFinding[]; }
+createOxlint: const createOxlint: () => Oxlint
