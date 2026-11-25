@@ -40,9 +40,6 @@
   "files": [],
   "references": [
     {
-      "path": "./packages/seams-eslint"
-    },
-    {
       "path": "./packages/seams-knip"
     },
     {

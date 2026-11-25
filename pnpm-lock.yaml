@@ -12,12 +12,6 @@ importers:
         specifier: ^24.0.0
         version: 24.19.2
 
-  packages/seams-eslint:
-    devDependencies:
-      '@types/node':
-        specifier: ^24.0.0
-        version: 24.19.2
-
   packages/seams-knip:
     devDependencies:
       '@types/node':
